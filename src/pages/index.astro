@@ -1,34 +1,375 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Cookie Recipe.">
-	<main class="recipe">
-		<div class="home">
-			<div class="bg-black w-screen h-[177vw] sm:max-h-[1080px]">
-				<!-- <video autoplay playsinline loop id="recipe_cookies" class="w-full sm:max-w-hero mx-auto">
+  <main class="recipe">
+    <div class="home">
+      <div class="bg-black w-screen h-[177vw] sm:max-h-[1080px]">
+        <!-- <video autoplay playsinline loop id="recipe_cookies" class="w-full sm:max-w-hero mx-auto">
 					<source src="https://crumbl.video/3f9099e3-f67f-4752-ac55-9026c145b389_WeeklyWideJan8-15_V2_COMPRESSED.mp4" type="video/mp4"/>
 				</video> -->
-				<img src="https://images.unsplash.com/photo-1637527843617-faa69ecf4a58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2265&q=80"/>
-			</div>
-		</div>
-	</main>
+        <img
+          src="https://images.unsplash.com/photo-1637527843617-faa69ecf4a58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2265&q=80"
+        />
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="md:max-w-7x1 md:mx-auto md:px-10">
+        <div class="flex items-start pb-3.5 px-5 md:pb-10">
+          <div class="relative mt-4 w-20 h-20 mr-5 md:w-16 md:h-20 md:mt-6">
+          </div>
+          <div class="mt-4 md:flex md:grow md:justify-between md:items-center">
+            <div>
+              <small
+                class="text-xs py-1.5 px-2.5 bg-black text-white font-semibold inline-block mb-1.5 md:mt-6 uppercase"
+              >
+                Join the family
+              </small>
+              <h2 class="font-bold text-base md:text-xl">
+                Apply to Work at a Cookie Recipe Near You
+              </h2>
+            </div>
+            <a class="flex items-center rounded-xl mt-5 py-2" href="#"
+              ><span class="mr-2 text-sm font-medium md:text-lg"
+                >Apply Today</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="w-full bg-black text-white text-center py-10">
+        <h1 class="font-bold text-2xl sm:text-4xl">Taste Monthly</h1><div
+          class="flex justify-center sm:mt-4 mt-2"
+        >
+          <p class="sm:text-xl sm:w-1/2 text-sm px-3 sm:px-0 font-normal">
+            Whether you need dessert delivery, curbside pickup, or something
+            else, we make it easy to order cookies online and through the app.
+          </p>
+        </div><div
+          class="sm:flex justify-evenly mt-4 px-20 items-center sm:visible hidden"
+        >
+          <a href="https://crumbl.com/order/delivery"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl">Delivery</span
+            ></a
+          ><a href="https://crumbl.com/order/pickup"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl">Curbside</span
+            ></a
+          ><a href="https://crumbl.com/order/catering"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl">Catering</span
+            ></a
+          ><a
+            class="rounded-xl bg-white sm:bg-transparent sm:block flex py-2 px-4 sm:p-0"
+            href="https://crumbl.com/gifting"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl text-black sm:text-white">Gifts</span
+            ></a
+          ><a class="rounded-2xl" href="https://crumbl.com/order/shipping"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl">Shipping</span
+            ></a
+          ><a href="https://crumbl.com/subscriptions"
+            ><span class="flex justify-center mb-3"></span><span
+              class="font-bold text-2xl">Subscriptions</span
+            ></a
+          >
+        </div>
+		<div class="sm:hidden flex flex-wrap justify-evenly mt-4">
+          <a
+            class="bg-white flex rounded text-black items-center p-3 w-[45vw] mb-3 h-16 justify-between"
+            href="https://crumbl.com/order/delivery"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Delivery</span
+            ></a
+          ><a
+            class="bg-white flex rounded text-black items-center p-3 w-[45vw] mb-3 h-16 justify-between"
+            href="https://crumbl.com/order/pickup"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Curbside</span
+            ></a
+          ><a
+            class="bg-white flex rounded text-black items-center p-3 w-[45vw] mb-3 h-16 justify-between"
+            href="https://crumbl.com/order/catering"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Catering</span
+            ></a
+          ><a
+            class="bg-white flex rounded text-black items-center p-3 w-[45vw] h-16 justify-between"
+            href="https://crumbl.com/gifting"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Gifts</span
+            ></a
+          ><a
+            class="bg-white flex rounded text-black items-center w-[45vw] p-3 h-16 justify-between"
+            href="https://crumbl.com/order/shipping"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Shipping</span
+            ></a
+          >
+          <a
+            class="bg-white flex rounded text-black items-center w-[45vw] p-3 h-16 justify-between"
+            href="https://crumbl.com/subscriptions"
+            ><span class="flex justify-center mr-1.5"></span><span
+              class="font-bold text-md text-black">Subscriptions</span
+            ></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="mt-10">
+      <div class="md:max-w-7xl md:flex md:items-center">
+        <div class="bg-black p-5 text-white inline-block min-w-max">
+          <h2 class="text-3xl">Cookie flavors</h2><small
+            class="text-sm uppercase opacity-70">Changes every month</small
+          >
+        </div>
+        <p class="pb-5 p-5 text-base z-[1]">
+          Each week, our menu rotates to give you 6 deliciously gourmet flavors
+          to experience.
+        </p>
+      </div>
+      <ul id="cookie-recipe-flavours">
+        <li
+          id="individual-cookie-flavor-Rocky Road "
+          class="grid grid-cols-2 pr-5 overflow-hidden md:overflow-visible md:max-w-7xl md:mx-auto lg:py-2.5 -mt-16"
+        >
+          <div
+            class="text-left flex flex-col mr-auto justify-center pl-5 md:pr-20"
+          >
+            <h3 class="text-3xl font-bold lg:text-5xl">Rodan Cookie</h3><p
+              class="hidden md:block md:visible text-base"
+            >
+              A chocolate cookie stuffed with marshmallow filling then covered
+              in semi-sweet chocolate chips and almonds.
+            </p>
+            
+          </div>
+		  <div class="relative h-100vw md:h-96 lg:h-huge">
+            <div class="absolute left-0 w-[75vw] md:w-full h-full">
+              <span
+                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"
+                ><img
+				class="rounded-full"
+                  alt="A delicious cookie"
+                  src="https://images.unsplash.com/photo-1582623203765-511e04ff6948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80"
+                  decoding="async"
+                  data-nimg="fill"
+                  style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                  sizes="100vw"
+                /><noscript
+                  ><img
+				  class="rounded-full"
+                    alt="A delicious cookie"
+                    sizes="100vw"
+                    
+                    src="https://images.unsplash.com/photo-1582623203765-511e04ff6948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80"
+                    decoding="async"
+                    data-nimg="fill"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                    loading="lazy"
+                  /></noscript
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+		<li
+          id="individual-cookie-flavor-Rocky Road "
+          class="grid grid-cols-2 pr-5 overflow-hidden md:overflow-visible md:max-w-7xl md:mx-auto lg:py-2.5 -mt-16"
+        >
+          <div
+            class="text-left flex flex-col mr-auto justify-center pl-5 md:pr-20"
+          >
+            <h3 class="text-3xl font-bold lg:text-5xl">Rodan Cookie</h3><p
+              class="hidden md:block md:visible text-base"
+            >
+              A chocolate cookie stuffed with marshmallow filling then covered
+              in semi-sweet chocolate chips and almonds.
+            </p>
+            
+          </div>
+		  <div class="relative h-100vw md:h-96 lg:h-huge">
+            <div class="absolute left-0 w-[75vw] md:w-full h-full">
+              <span
+                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"
+                ><img
+				class="rounded-full"
+                  alt="A delicious cookie"
+                  src="https://images.unsplash.com/photo-1583516867196-ea9a73ecdc13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2360&q=80"
+                  decoding="async"
+                  data-nimg="fill"
+                  style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                  sizes="100vw"
+                /><noscript
+                  ><img
+                    alt="A delicious cookie"
+                    sizes="100vw"
+                    
+                    src="https://images.unsplash.com/photo-1583516867196-ea9a73ecdc13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2360&q=80"
+                    decoding="async"
+                    data-nimg="fill"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                    loading="lazy"
+                  /></noscript
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+		<li
+          id="individual-cookie-flavor-Rocky Road "
+          class="grid grid-cols-2 pr-5 overflow-hidden md:overflow-visible md:max-w-7xl md:mx-auto lg:py-2.5 -mt-16"
+        >
+          <div
+            class="text-left flex flex-col mr-auto justify-center pl-5 md:pr-20"
+          >
+            <h3 class="text-3xl font-bold lg:text-5xl">Rodan Cookie</h3><p
+              class="hidden md:block md:visible text-base"
+            >
+              A chocolate cookie stuffed with marshmallow filling then covered
+              in semi-sweet chocolate chips and almonds.
+            </p>
+            
+          </div>
+		  <div class="relative h-100vw md:h-96 lg:h-huge">
+            <div class="absolute left-0 w-[75vw] md:w-full h-full">
+              <span
+                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"
+                ><img
+				class="rounded-full"
+                  alt="A delicious cookie"
+                  src="https://images.unsplash.com/photo-1629324482344-58ac79e26b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2487&q=80"
+                  decoding="async"
+                  data-nimg="fill"
+                  style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                  sizes="100vw"
+                /><noscript
+                  ><img
+                    alt="A delicious cookie"
+                    sizes="100vw"
+                    
+                    src="https://images.unsplash.com/photo-1629324482344-58ac79e26b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2487&q=80"
+                    decoding="async"
+                    data-nimg="fill"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                    loading="lazy"
+                  /></noscript
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+		<li
+          id="individual-cookie-flavor-Rocky Road "
+          class="grid grid-cols-2 pr-5 overflow-hidden md:overflow-visible md:max-w-7xl md:mx-auto lg:py-2.5 -mt-16"
+        >
+          <div
+            class="text-left flex flex-col mr-auto justify-center pl-5 md:pr-20"
+          >
+            <h3 class="text-3xl font-bold lg:text-5xl">Rodan Cookie</h3><p
+              class="hidden md:block md:visible text-base"
+            >
+              A chocolate cookie stuffed with marshmallow filling then covered
+              in semi-sweet chocolate chips and almonds.
+            </p>
+            
+          </div>
+		  <div class="relative h-100vw md:h-96 lg:h-huge">
+            <div class="absolute left-0 w-[75vw] md:w-full h-full">
+              <span
+                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"
+                ><img
+				class="rounded-full"
+                  alt="A delicious cookie"
+                  src="https://images.unsplash.com/photo-1555670376-fdd64520d214?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2487&q=80"
+                  decoding="async"
+                  data-nimg="fill"
+                  style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                  sizes="100vw"
+                /><noscript
+                  ><img
+				  class="rounded-full"
+                    alt="A delicious cookie"
+                    sizes="100vw"
+                    
+                    src="https://images.unsplash.com/photo-1555670376-fdd64520d214?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2487&q=80"
+                    decoding="async"
+                    data-nimg="fill"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                    loading="lazy"
+                  /></noscript
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+		<li
+          id="individual-cookie-flavor-Rocky Road "
+          class="grid grid-cols-2 pr-5 overflow-hidden md:overflow-visible md:max-w-7xl md:mx-auto lg:py-2.5 -mt-16"
+        >
+          <div
+            class="text-left flex flex-col mr-auto justify-center pl-5 md:pr-20"
+          >
+            <h3 class="text-3xl font-bold lg:text-5xl">Rodan Cookie</h3><p
+              class="hidden md:block md:visible text-base"
+            >
+              A chocolate cookie stuffed with marshmallow filling then covered
+              in semi-sweet chocolate chips and almonds.
+            </p>
+            
+          </div>
+		  <div class="relative h-100vw md:h-96 lg:h-huge">
+            <div class="absolute left-0 w-[75vw] md:w-full h-full">
+              <span
+                style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"
+                >
+				<img
+				class="rounded-full top-0 bottom-0 m-0"
+                  alt="A delicious cookie"
+                  src="https://images.unsplash.com/photo-1607875674513-99c57e4a9c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                  decoding="async"
+                  data-nimg="fill"
+                  
+                  sizes="100vw"
+                /><noscript
+                  ><img
+                    alt="A delicious cookie"
+                    sizes="100vw"
+                    
+                    src="https://images.unsplash.com/photo-1607875674513-99c57e4a9c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                    decoding="async"
+                    data-nimg="fill"
+                    style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:contain;object-position:left"
+                    loading="lazy"
+                  /></noscript
+                ></span
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.recipe .home {
-		margin-top: -88px;
-		overflow: hidden;
-	}
-	
+  main {
+    margin: auto;
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .recipe .home {
+    margin-top: -88px;
+    overflow: hidden;
+  }
 </style>
